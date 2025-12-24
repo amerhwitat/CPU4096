@@ -4,7 +4,7 @@ Simulator of 4096 bit CPU, prilminary building block
 README file:
 
 I was thinking about to create a simulator of 1024 bit processor that has 1024 registers and 1024 bit math and logic capabilities.
-Then I have came to a conclusion that the simulator will run relatively efficient now adays with fast storage of SSD disks, and 64-bit running memory bus, it’s not really a 64-bit because of hardware limitations, on Intel x86_64 (CISC) and ARM_64 (RISC5) bits processors.
+Then I have came to a conclusion that the simulator will run relatively efficient now adays with fast storage of SSD disks, and 64-bit running memory bus, it’s not really a 64-bit because of hardware limitations, on Intel x86_64 (CISC) and ARM_64 (RISC-V) bits processors.
 I was thinking more and came to the idea that there will be a benefit to make the simulator real run as OS overload, or to go and build a kernel from scratch, in the second case I have to build IO and Device drivers for a variety of Hardware including Ethernet, screen (Video Display), and Disk IO, memory and cache.. etc
 
 So I’m also thinking about to make Tensor as the building Block of storage in-Memory or on Disk, and to make an FS (file system) that is read on Intel based and ARM based Hardware, the AI capable Kernel that I thought to be the low-level or (ring 0) or (EL0) would build the kernel from disk and to build the core of it using trained datasets that are common sense of most facts that we know as people.
