@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/blob/main/LICENSE</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/activity</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/issues</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/pulls</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/actions</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/security</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/blob/main/README.md</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/blob/main/RegisterN.hpp</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/blob/main/googlefc77ae5387826479.html</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/blob/main/headers.h</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/blob/main/main.cpp</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/blob/main/registerN.cbp</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/releases</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/search?q=repo%3Aamerhwitat%2FCPU4096++language%3AC%2B%2B</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/search?q=repo%3Aamerhwitat%2FCPU4096++language%3AHTML</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/labels</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/milestones</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/commit/82cd9b47ded92c517857716c48f1a04a89214321</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/releases/tag/CPU1024-bit</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/milestones?state=closed</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/commit/3d75e9ccd5d3b5a0dc316db9efdf5cd0b556f415</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/commit/ad6e0d31b11ebb759c1b828c099804c165b4bfcf</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/amerhwitat/CPU4096/commit/91ebe606598916c3ced4b14566809a5aadd80c44</loc>
+  <lastmod>2025-12-24T21:47:44+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>
