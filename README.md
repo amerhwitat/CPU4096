@@ -296,11 +296,4 @@ Serialization to memory bus
 
 AVX-512 optimization
 
-If you want next:
-✔ Register file (32×1024-bit)
-✔ Instruction decoder & executor
-✔ ARM/RISC-V-style flags
-✔ JIT backend
-✔ Pipeline simulator
-
 amer.hwitat@proton.me
