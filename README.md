@@ -8,7 +8,7 @@ Simulator and research implementation of configurable wide-register CPUs, includ
 - `java/` — Java semantic/interoperability layer.
 - `node/` — Node.js ESM integration and reproducibility layer.
 - existing Python artifacts — research/reference workloads.
-- `chimera/` — common 128D state and P2P interoperability contract.
+- `dotnet/` — managed compatibility layer where present.
 
 All tracks consume deterministic crypto/AI vectors and reproducibility metadata. The shared solution covers fixed-width arithmetic, bitwise operations, shifts, multiplication, register snapshots, concurrency experiments, SHA/Keccak, CNN/GRU/RNN and offline-RL workload metadata.
 
@@ -18,7 +18,9 @@ The simulator uses fixed-width registers represented as arrays of 64-bit host wo
 
 ## Chimera 128D + P2P integration
 
-CPU/register snapshots can be associated with the common Chimera 128D application-state envelope: geometry, time, observer/perspective, events, object properties, interactions and extensible vector state. `chimera/p2p_protocol.json` defines authenticated peer capability exchange and content-addressed synchronization for distributed simulator nodes. No arbitrary network scanning is implied.
+CPU and workload state can be represented through the Chimera 128D semantic profile: geometry/state, time, observer/perspective, events, objects, properties and interaction rules, with an extensible perception/cognition layer. P2P synchronization is opt-in and authenticated, using deterministic snapshots/deltas, sequence numbers, payload hashes and capability exchange.
+
+The P2P layer is for trusted simulator/application nodes and does not perform unsolicited network scanning, credential exchange, private-key discovery or arbitrary remote execution. See `docs/CHIMERA_128D_P2P_INTEGRATION.md`.
 
 ## Chimera II integration
 
@@ -51,6 +53,6 @@ cd node && npm test
 
 See `docs/CRYPTO_AI_WORKLOADS.md` and the language READMEs for detailed contracts.
 
-## License
+## Licensing
 
-Original project code is released under the GNU General Public License v3 or later. Third-party components retain their applicable licenses.
+The repository is distributed under GNU GPL v3 or later. Existing third-party dependencies remain under their respective licenses.
