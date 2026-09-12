@@ -2,16 +2,20 @@
 
 Simulator and research implementation of configurable wide-register CPUs, including the 4096-bit lineage and C8192/R8192 workload mapping.
 
-## Source-code citation index
+## Complete source-code citation index
 
-- [C++ implementation](cpp/)
-- [Java implementation](java/)
-- [Node.js implementation](node/)
-- [Python/reference workloads](.)
-- [.NET compatibility implementation](dotnet/)
-- [Apple implementation](apple/)
-- [Centralized Apple Objective-C + Flutter companion](https://github.com/amerhwitat/general/tree/master/Apple-Implementations/CPU4096)
-- [Documentation](docs/)
+| Implementation / area | Source |
+|---|---|
+| C++ implementation | [cpp/](cpp/) |
+| Java implementation | [java/](java/) |
+| Node.js implementation | [node/](node/) |
+| Python/reference workloads | [repository root](.) |
+| .NET compatibility | [dotnet/](dotnet/) |
+| Apple implementation | [apple/](apple/) |
+| Documentation | [docs/](docs/) |
+| Complete tracked repository | [source tree](.) |
+
+These links are the README-level citations for all maintained implementation areas; subdirectory READMEs and source files remain the detailed source record.
 
 ## Apple Objective-C + Flutter
 
