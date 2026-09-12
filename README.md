@@ -2,6 +2,17 @@
 
 Simulator and research implementation of configurable wide-register CPUs, including the 4096-bit lineage and C8192/R8192 workload mapping.
 
+## Source-code citation index
+
+- [C++ implementation](cpp/)
+- [Java implementation](java/)
+- [Node.js implementation](node/)
+- [Python/reference workloads](.)
+- [.NET compatibility implementation](dotnet/)
+- [Apple implementation](apple/)
+- [Centralized Apple Objective-C + Flutter companion](https://github.com/amerhwitat/general/tree/master/Apple-Implementations/CPU4096)
+- [Documentation](docs/)
+
 ## Apple Objective-C + Flutter
 
 The centralized Apple companion is [`general/Apple-Implementations/CPU4096`](https://github.com/amerhwitat/general/tree/master/Apple-Implementations/CPU4096). It contains Objective-C native bridges, XcodeGen configuration and Flutter iOS/macOS sources for the simulator UI and native compute boundary.
@@ -16,10 +27,6 @@ The centralized Apple companion is [`general/Apple-Implementations/CPU4096`](htt
 - `apple/` — SwiftUI/Xcode iOS/iPadOS and macOS application boundary.
 
 All tracks consume deterministic crypto/AI vectors and reproducibility metadata. The shared solution covers fixed-width arithmetic, bitwise operations, shifts, multiplication, register snapshots, concurrency experiments, SHA/Keccak, CNN/GRU/RNN and offline-RL workload metadata.
-
-## Apple applications
-
-`apple/project.yml` is generated with XcodeGen into iOS and macOS application targets. The centralized Objective-C/Flutter implementation is the preferred portfolio source for the Apple UI/native bridge. Apple signing material remains outside Git.
 
 ## Register model
 
