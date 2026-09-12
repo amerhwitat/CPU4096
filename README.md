@@ -2,6 +2,10 @@
 
 Simulator and research implementation of configurable wide-register CPUs, including the 4096-bit lineage and C8192/R8192 workload mapping.
 
+## Apple Objective-C + Flutter
+
+The centralized Apple companion is [`general/Apple-Implementations/CPU4096`](https://github.com/amerhwitat/general/tree/master/Apple-Implementations/CPU4096). It contains Objective-C native bridges, XcodeGen configuration and Flutter iOS/macOS sources for the simulator UI and native compute boundary.
+
 ## Cross-language implementation matrix
 
 - `cpp/` — native C++ wide-register implementation and performance/conformance layer.
@@ -15,7 +19,7 @@ All tracks consume deterministic crypto/AI vectors and reproducibility metadata.
 
 ## Apple applications
 
-`apple/project.yml` is generated with XcodeGen into iOS and macOS application targets. `apple/Sources/` contains the SwiftUI entry point and model boundary. Run `xcodegen generate --spec apple/project.yml` on macOS, then use `apple/scripts/apple-build.sh`; set `EXPORT_OPTIONS` for IPA export. Apple signing material remains outside Git.
+`apple/project.yml` is generated with XcodeGen into iOS and macOS application targets. The centralized Objective-C/Flutter implementation is the preferred portfolio source for the Apple UI/native bridge. Apple signing material remains outside Git.
 
 ## Register model
 
@@ -34,29 +38,6 @@ C8192/R8192 are architectural research targets. The repository supplies determin
 ## Security boundary
 
 Cryptographic benchmarking uses public or synthetic material. No address-targeted private-key enumeration, seed guessing, credential harvesting or unauthorized wallet access is implemented.
-
-## Build
-
-C++:
-
-```bash
-cmake -S cpp -B cpp/build
-cmake --build cpp/build
-```
-
-Java:
-
-```bash
-cd java && mvn test
-```
-
-Node.js:
-
-```bash
-cd node && npm test
-```
-
-See `docs/CRYPTO_AI_WORKLOADS.md` and the language READMEs for detailed contracts.
 
 ## Licensing
 
