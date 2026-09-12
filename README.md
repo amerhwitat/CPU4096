@@ -9,8 +9,13 @@ Simulator and research implementation of configurable wide-register CPUs, includ
 - `node/` — Node.js ESM integration and reproducibility layer.
 - existing Python artifacts — research/reference workloads.
 - `dotnet/` — managed compatibility layer where present.
+- `apple/` — SwiftUI/Xcode iOS/iPadOS and macOS application boundary.
 
 All tracks consume deterministic crypto/AI vectors and reproducibility metadata. The shared solution covers fixed-width arithmetic, bitwise operations, shifts, multiplication, register snapshots, concurrency experiments, SHA/Keccak, CNN/GRU/RNN and offline-RL workload metadata.
+
+## Apple applications
+
+`apple/project.yml` is generated with XcodeGen into iOS and macOS application targets. `apple/Sources/` contains the SwiftUI entry point and model boundary. Run `xcodegen generate --spec apple/project.yml` on macOS, then use `apple/scripts/apple-build.sh`; set `EXPORT_OPTIONS` for IPA export. Apple signing material remains outside Git.
 
 ## Register model
 
