@@ -1,0 +1,6 @@
+services:
+  cpu4096:
+    build: .
+    image: amerhwitat/cpu4096:local
+    container_name: cpu4096
+    init: true
