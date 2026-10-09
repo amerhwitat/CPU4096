@@ -1,0 +1,42 @@
+name: CPU4096 Java Register Contracts
+
+on:
+  push:
+    branches: [main]
+    paths: ["java/**", "node/**", "contracts/fixtures/**", ".github/workflows/java-register-contracts.yml"]
+  pull_request:
+    paths: ["java/**", "node/**", "contracts/fixtures/**", ".github/workflows/java-register-contracts.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  java-register-contracts:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: java
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+          cache-dependency-path: java/pom.xml
+      - name: Verify register model against shared vectors
+        run: mvn --batch-mode --no-transfer-progress clean verify
+
+  node-fixture-parity:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: node
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Verify Node snapshot against shared register fixture
+        run: node --test
