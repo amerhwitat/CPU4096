@@ -41,6 +41,26 @@ public final class RegisterN {
     public RegisterN and(RegisterN other) { requireSameWidth(other); return new RegisterN(widthBits, value.and(other.value)); }
     public RegisterN or(RegisterN other) { requireSameWidth(other); return new RegisterN(widthBits, value.or(other.value)); }
     public RegisterN xor(RegisterN other) { requireSameWidth(other); return new RegisterN(widthBits, value.xor(other.value)); }
+
+    /** Low-width multiplication, matching RegisterN<Bits>::mul in the C++ implementation. */
+    public RegisterN multiply(RegisterN other) {
+        requireSameWidth(other);
+        return new RegisterN(widthBits, value.multiply(other.value));
+    }
+
+    /** Parse an unsigned hexadecimal register value; accepts an optional 0x prefix. */
+    public static RegisterN fromHex(int widthBits, String hex) {
+        if (hex == null || hex.isBlank()) throw new IllegalArgumentException("hex value is required");
+        String digits = hex.startsWith("0x") || hex.startsWith("0X") ? hex.substring(2) : hex;
+        if (digits.isEmpty() || !digits.matches("[0-9a-fA-F]+")) {
+            throw new IllegalArgumentException("invalid hexadecimal register value");
+        }
+        BigInteger parsed = new BigInteger(digits, 16);
+        if (parsed.bitLength() > widthBits) {
+            throw new IllegalArgumentException("hex value exceeds register width");
+        }
+        return new RegisterN(widthBits, parsed);
+    }
     public RegisterN not() { return new RegisterN(widthBits, value.xor(mask(widthBits))); }
     public RegisterN shiftLeft(int count) {
         if (count < 0) throw new IllegalArgumentException("negative shift count");
