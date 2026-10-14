@@ -47,6 +47,27 @@ class RegisterNContractTest {
     }
 
     @Test
+    void multiplyWrapsAtRegisterWidth() {
+        RegisterN a = new RegisterN(64, new BigInteger("18446744073709551615"));
+        RegisterN b = new RegisterN(64, BigInteger.TWO);
+        assertEquals(new BigInteger("18446744073709551614"), a.multiply(b).unsignedValue());
+        assertEquals(BigInteger.ONE,
+            new RegisterN(64, new BigInteger("18446744073709551615"))
+                .multiply(new RegisterN(64, new BigInteger("18446744073709551615")))
+                .unsignedValue());
+    }
+
+    @Test
+    void parsesHexWithOptionalPrefixAndRejectsOverflow() {
+        assertEquals(new BigInteger("DEADBEEF", 16),
+            RegisterN.fromHex(64, "0xDEADBEEF").unsignedValue());
+        assertEquals(BigInteger.ZERO, RegisterN.fromHex(64, "0X0").unsignedValue());
+        assertThrows(IllegalArgumentException.class, () -> RegisterN.fromHex(64, "xyz"));
+        assertThrows(IllegalArgumentException.class,
+            () -> RegisterN.fromHex(64, "10000000000000000"));
+    }
+
+    @Test
     void snapshotsAreLittleEndianWordsAndStable() {
         RegisterN r = new RegisterN(128, new BigInteger("36893488147419103231"));
         assertEquals(List.of("18446744073709551615", "1"), r.snapshotWords());
