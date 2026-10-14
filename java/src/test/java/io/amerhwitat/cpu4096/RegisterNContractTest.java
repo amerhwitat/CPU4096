@@ -51,10 +51,10 @@ class RegisterNContractTest {
         RegisterN a = new RegisterN(64, new BigInteger("18446744073709551615"));
         RegisterN b = new RegisterN(64, BigInteger.TWO);
         assertEquals(new BigInteger("18446744073709551614"), a.multiply(b).unsignedValue());
-        assertEquals(BigInteger.ZERO,
+        assertEquals(BigInteger.ONE,
             new RegisterN(64, new BigInteger("18446744073709551615"))
                 .multiply(new RegisterN(64, new BigInteger("18446744073709551615")))
-                .add(new RegisterN(64, BigInteger.ONE)).unsignedValue());
+                .unsignedValue());
     }
 
     @Test
